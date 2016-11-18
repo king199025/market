@@ -1,5 +1,5 @@
 <?php
-
+use yii\helpers\Url;
 ?>
 
 <header class="b-header">
@@ -16,18 +16,23 @@
                     <a href="#777" class="link-callback">Заказать звонок</a>
                 </div>
                 <div class="b-login row">
+
                     <div class="b-login__inner">
                         <a href="#login" class="b-login__login link open_modal">Вход</a>
                         <a href="#registration" class="btn btn--transparent modReg b-login__register open_modal" data-csrf="<?= Yii::$app->request->getCsrfToken()?>">Регистрация</a>
                     </div>
+
                     <div class="b-login__logged">
                         <a href="#777" class="b-login__auth link js-auth-link">Александр Смирнов</a>
                         <div class="b-login__menu">
                             <a href="#777" class="b-login__menu-link">Личный кабинет</a>
-                            <a href="#777" class="b-login__menu-link">Личная информация</a>
-                            <a href="#777" class="b-login__menu-link">Выход</a>
+                            <a href="<?= Url::to(['/user/settings/account'])?>" class="b-login__menu-link">Личная информация</a>
+                            <a data-method="post" href="<?= Url::to(['/user/security/logout'])?>" class="b-login__menu-link">Выход</a>
                         </div>
                     </div>
+
+
+
                 </div>
             </div>
         </div>

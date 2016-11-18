@@ -22,7 +22,7 @@ AppAsset::register($this);
     <title><?= Html::encode($this->title) ?></title>
     <?php $this->head() ?>
 </head>
-<body>
+<body class="<?= !Yii::$app->user->isGuest ? 'is-logged' : ''?>">
 <?php $this->beginBody() ?>
 <div class="b-wrapper">
     <?= \frontend\widgets\ShowHeader::widget();?>
