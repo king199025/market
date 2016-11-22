@@ -43,3 +43,18 @@
 #registration{
     left: 33%;
 }
+
+
+.b-faq__item {
+    display: block;
+    margin-bottom: 30px;
+    width: 50%;
+    float: left;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+.b-faq {
+    display: flex;
+    flex-wrap: wrap;
+}

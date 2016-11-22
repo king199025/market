@@ -52,6 +52,12 @@ return [
         'mainpage' => [
             'class' => 'frontend\modules\mainpage\Mainpage',
         ],
+        'news' => [
+            'class' => 'frontend\modules\news\News',
+        ],
+        'faq' => [
+            'class' => 'frontend\modules\faq\Faq',
+        ],
     ],
     'params' => $params,
 ];

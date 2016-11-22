@@ -47,8 +47,8 @@ use yii\helpers\Url;
                 <nav class="b-menu js-menu">
                     <a href="/" class="b-menu__link">Главная</a>
                     <a href="#777" class="b-menu__link">О компании</a>
-                    <a href="#777" class="b-menu__link">Новости</a>
-                    <a href="#777" class="b-menu__link">FAQ</a>
+                    <a href="<?= Url::to(['/news/default/index'])?>" class="b-menu__link">Новости</a>
+                    <a href="<?= Url::to(['/faq/default/index'])?>" class="b-menu__link">FAQ</a>
                     <a href="#777" class="b-menu__link">Проверить продукт</a>
                     <a href="#777" class="b-menu__link">Каталог</a>
                     <a href="#777" class="b-menu__link">Контакты</a>
